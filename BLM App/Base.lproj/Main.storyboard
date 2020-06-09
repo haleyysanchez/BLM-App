@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -16,32 +16,79 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blm home page" translatesAutoresizingMaskIntoConstraints="NO" id="JIH-G2-u1R">
-                                <rect key="frame" x="-18" y="153" width="450" height="260"/>
+                                <rect key="frame" x="-18" y="188" width="450" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BLM Resources APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYJ-rQ-naV">
-                                <rect key="frame" x="20" y="76" width="374" height="44"/>
+                                <rect key="frame" x="20" y="98" width="374" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnW-aq-5QS">
-                                <rect key="frame" x="186" y="454" width="42" height="21"/>
+                                <rect key="frame" x="186" y="523" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.936310423" green="1" blue="0.98985961710000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utA-k8-gVZ">
+                                <rect key="frame" x="20" y="41" width="35" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="house.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJN-eB-kLY">
+                                <rect key="frame" x="374" y="44" width="20" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="info.circle.fill" catalog="system"/>
+                            </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zfg-iT-4pP">
                                 <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <barButtonItem title="Item" id="hjP-gm-qEW"/>
+                                    <barButtonItem image="book" catalog="system" id="hjP-gm-qEW">
+                                        <connections>
+                                            <segue destination="IMb-FL-Jms" kind="show" id="EiM-tZ-Nmc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title=" " style="plain" id="iCa-kb-byW"/>
+                                    <barButtonItem image="lightbulb" catalog="system" id="mUr-nH-jP6">
+                                        <connections>
+                                            <segue destination="c1k-Vn-H5k" kind="show" id="Okf-Fh-clO"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title=" " style="plain" id="mre-5i-I0M"/>
+                                    <barButtonItem image="chart.bar" catalog="system" id="EO6-lu-zdV">
+                                        <connections>
+                                            <segue destination="22b-ty-JOl" kind="show" id="jEE-hI-uKG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title=" " style="plain" id="UIj-zR-BvU"/>
+                                    <barButtonItem image="square.and.pencil" catalog="system" id="Kqm-ec-9cE">
+                                        <connections>
+                                            <segue destination="9Xo-Rn-0HU" kind="show" id="uaz-LE-3Vp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title=" " style="plain" id="o0x-91-3Ly"/>
+                                    <barButtonItem title="Item" image="doc.text" catalog="system" id="sGy-kO-UGl">
+                                        <connections>
+                                            <segue destination="nOC-xb-rhT" kind="show" id="zYA-po-FAz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title=" " style="plain" id="ffj-RO-aRR"/>
+                                    <barButtonItem image="house" catalog="system" id="4ph-yh-zCF"/>
+                                    <barButtonItem title=" " style="plain" id="Zn4-6a-rbj"/>
+                                    <barButtonItem image="info.circle" catalog="system" id="yoF-T2-7ij"/>
                                 </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" white="0.089999999999999997" alpha="0.99983215329999997" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.022161880509999999" green="0.022170117119999999" blue="0.022160135210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="jHj-Pg-ExX"/>
@@ -55,11 +102,12 @@
             <objects>
                 <viewController id="IMb-FL-Jms" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4DY-Ub-w2c">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.089999999999999997" alpha="0.99983215329999997" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="trP-KJ-eAx"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gSP-wU-3av"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83O-xt-DG8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,11 +118,12 @@
             <objects>
                 <viewController id="22b-ty-JOl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wec-4r-TcN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.089999999999999997" alpha="0.99983215329999997" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Fcq-ll-bde"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ifa-ts-oT1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bz1-qn-2dH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,11 +134,12 @@
             <objects>
                 <viewController id="c1k-Vn-H5k" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sOz-0N-b35">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.089999999999999997" alpha="0.99983215329999997" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="bqY-gJ-Fd8"/>
                     </view>
+                    <navigationItem key="navigationItem" id="u5e-C0-OYw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8AR-xA-a90" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,11 +150,12 @@
             <objects>
                 <viewController id="9Xo-Rn-0HU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gvH-gm-utI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.089999999999999997" alpha="0.99983215329999997" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="1Jq-5p-ua3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="K2s-8j-USi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgN-ak-HWY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,11 +166,12 @@
             <objects>
                 <viewController id="nOC-xb-rhT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFo-C2-RNX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.089999999999999997" alpha="0.99983215329999997" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="HgL-mk-ACd"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QQf-7M-l49"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jym-j5-y5f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,5 +180,14 @@
     </scenes>
     <resources>
         <image name="blm home page" width="798" height="798"/>
+        <image name="book" catalog="system" width="128" height="101"/>
+        <image name="chart.bar" catalog="system" width="128" height="90"/>
+        <image name="doc.text" catalog="system" width="115" height="128"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="lightbulb" catalog="system" width="113" height="128"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
     </resources>
 </document>
